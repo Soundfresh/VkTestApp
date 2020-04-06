@@ -1,0 +1,55 @@
+{
+  "game_title": "Разделите героев сериалов",
+  "game_items": [
+    {
+      "serial": "Игра Престолов",
+      "items": [
+        {
+          "name": "Джон Сноу",
+          "image": "john"
+        },
+        {
+          "name": "Давос",
+          "image": "davos"
+        },
+        {
+          "name": "Семвел Тарли",
+          "image": "semwell"
+        },
+        {
+          "name": "Мирцелла",
+          "image": "mircella"
+        },
+        {
+          "name": "Лиана",
+          "image": "liana"
+        }
+      ]
+    },
+    {
+      "serial": "Властелин Колец",
+      "items": [
+        {
+          "name": "Фродо Беггинс",
+          "image": "frodo"
+        },
+        {
+          "name": "Эовин",
+          "image": "eovin"
+        },
+        {
+          "name": "Арагорн",
+          "image": "aragorn"
+        },
+        {
+          "name": "Арвен",
+          "image": "arven"
+        },
+        {
+          "name": "Эомер",
+          "image": "eomer"
+        }
+      ]
+    }
+  ]
+}

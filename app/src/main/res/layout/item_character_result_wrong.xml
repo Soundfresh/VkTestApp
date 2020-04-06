@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chechetkin.yuri.vktestapp.views.FixedAspectRatioRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"
+    app:aspect_ratio="w,3:4"
+    app:corner_radius="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/john" />
+
+    <chechetkin.yuri.vktestapp.views.RoundedTextView
+        android:id="@+id/result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/character_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/holo_red_light"
+        android:maxLines="1"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/result_wrong"
+        android:textColor="@android:color/white"
+        app:corner_radius="h,1:2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_text_view"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_dark_color" />
+
+    <TextView
+        android:id="@+id/character_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/serial_wrong_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:text="Джон Сноу" />
+
+    <TextView
+        android:id="@+id/serial_wrong_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/serial_right_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/colorGray"
+        tools:text="Властелин колец" />
+
+    <TextView
+        android:id="@+id/serial_right_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        tools:text="Игра престолов" />
+
+</chechetkin.yuri.vktestapp.views.FixedAspectRatioRelativeLayout>

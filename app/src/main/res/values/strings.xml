@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">VkTestApp</string>
+
+    <string name="right_button_text">Игра\nпрестолов</string>
+    <string name="left_button_text">Властелин\nколец</string>
+
+    <string name="game_of_throne_text">Игра Престолов</string>
+    <string name="lord_of_the_ring_text">Властелин Колец</string>
+
+    <string name="result_right">Верно</string>
+    <string name="result_wrong">Неверно</string>
+
+    <string name="result_pattern">%1$d / %2$d</string>
+
+    <string name="result_title">Ваш результат</string>
+    <string name="game_title">Задание</string>
+    <string name="app_title">Разделите героев сериала</string>
+
+    <string name="try_again">Попробовать ещё раз</string>
+</resources>

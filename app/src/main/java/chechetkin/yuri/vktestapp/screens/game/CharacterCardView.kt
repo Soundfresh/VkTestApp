@@ -5,10 +5,10 @@ import android.util.AttributeSet
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import chechetkin.yuri.vktestapp.screens.game.models.Character
 import chechetkin.yuri.vktestapp.R
 import chechetkin.yuri.vktestapp.core.PopulatableView
+import com.bumptech.glide.Glide
 
 class CharacterCardView @JvmOverloads constructor(
     context: Context,
@@ -25,6 +25,9 @@ class CharacterCardView @JvmOverloads constructor(
 
     override fun populate(model: Character) {
         nameView.text = model.name
-        imageView.setImageDrawable(ContextCompat.getDrawable(context, model.image))
+        Glide
+            .with(this)
+            .load(model.image)
+            .into(imageView)
     }
 }
